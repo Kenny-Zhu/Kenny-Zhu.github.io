@@ -36,7 +36,7 @@ const projectsData = [
     id: 4,
     title: "Weather App",
     description: "Weather app made using React.",
-    image: "/images/projects/weather_pic.jpg",
+    image: "/images/projects/weather_pic.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/Kenny-Zhu/react-weather",
     previewUrl: "https://github.com/Kenny-Zhu/react-weather",
