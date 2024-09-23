@@ -7,57 +7,57 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
+    title: "Anime Search Engine",
+    description: "Search engine utilizing the Jikan v4 API.",
+    image: "/images/projects/anime_engine_pic.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Kenny-Zhu/AniEngine",
+    previewUrl: "https://kenny-zhu.github.io/aniengine-app/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "PugTime",
+    description: "App dedicated to organizing games for my University's gaming club.",
+    image: "/images/projects/pugtime_pic.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://gitlab.cleft.fun/brandon/PugTime",
+    previewUrl: "https://gitlab.cleft.fun/brandon/PugTime",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "Animedoro Study Timer",
+    description: "Pomodoro app that also doubles as an anime list.",
+    image: "/images/projects/animedoro_pic.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Kenny-Zhu/Animedoro-app",
+    previewUrl: "https://kenny-zhu.github.io/Animedoro-app/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
+    title: "Weather App",
+    description: "Weather app made using React.",
+    image: "/images/projects/weather_pic.jpg",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Kenny-Zhu/react-weather",
+    previewUrl: "https://github.com/Kenny-Zhu/react-weather",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    title: "Sustainability Analytics Final Project",
+    description: "Analysis on the impact of lightrails on PM2.5 pollution levels.",
+    image: "/images/projects/FIRE.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/umdfiresa2023/fire-summit-greenlight",
+    previewUrl: "https://github.com/umdfiresa2023/fire-summit-greenlight",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
+    title: "NEAT Flappy Bird",
+    description: "Neural network that learns to play the game Flappy Bird.",
+    image: "/images/projects/NEAT_Flappy.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Kenny-Zhu/Flappy-Bird-AI",
+    previewUrl: "https://github.com/Kenny-Zhu/Flappy-Bird-AI",
   },
 ];
 
@@ -84,23 +84,23 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        />
-      </div>
+      {/*<div className="text-white flex flex-row justify-center items-center gap-2 py-6">*/}
+      {/*  <ProjectTag*/}
+      {/*    onClick={handleTagChange}*/}
+      {/*    name="All"*/}
+      {/*    isSelected={tag === "All"}*/}
+      {/*  />*/}
+      {/*  <ProjectTag*/}
+      {/*    onClick={handleTagChange}*/}
+      {/*    name="Web"*/}
+      {/*    isSelected={tag === "Web"}*/}
+      {/*  />*/}
+      {/*  <ProjectTag*/}
+      {/*    onClick={handleTagChange}*/}
+      {/*    name="Mobile"*/}
+      {/*    isSelected={tag === "Mobile"}*/}
+      {/*  />*/}
+      {/*</div>*/}
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
