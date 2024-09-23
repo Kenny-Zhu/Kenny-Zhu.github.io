@@ -4,7 +4,6 @@ import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
-import ConnectWithMe from "./components/ConnectWithMe";
 import GPTSection from "./components/gpt"
 import AchievementsSection from "./components/AchievementsSection";
 
